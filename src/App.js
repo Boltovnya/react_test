@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import TEST_VAR_NODE_SCOPE from './notreact';
+import NotReact from './notreact';
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p><b>React Scoped Variable:</b> {TEST_VAR_REACT_SCOPE}</p>
-        <p><b>Node Scoped Variable:</b> {TEST_VAR_NODE_SCOPE}</p>
+        <NotReact/>
       </header>
     </div>
   );

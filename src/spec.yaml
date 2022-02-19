@@ -1,0 +1,26 @@
+alerts:
+- rule: DEPLOYMENT_FAILED
+- rule: DOMAIN_FAILED
+name: react-test
+region: lon
+services:
+- build_command: npm run build
+  environment_slug: node-js
+  envs:
+  - key: REACT_APP_TEST_VAR
+    scope: RUN_AND_BUILD_TIME
+    value: this_variable_is_for_react
+  - key: REACT_APP_TEST_VAR_NODE
+    scope: RUN_AND_BUILD_TIME
+    value: this_variable_is_for_node
+  github:
+    branch: main
+    repo: Boltovnya/react_test
+  http_port: 8080
+  instance_count: 1
+  instance_size_slug: basic-xs
+  name: react-test
+  routes:
+  - path: /
+  run_command: npm install -g serve && serve -s build
+  source_dir: /
