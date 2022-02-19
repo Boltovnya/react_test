@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import TEST_VAR_NODE_SCOPE from 'notreact'
+import TEST_VAR_NODE_SCOPE from './notreact'
 
 function App() {
 
