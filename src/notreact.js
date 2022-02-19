@@ -1,2 +1,2 @@
-const TEST_VAR_NODE_SCOPE = process.env.TEST_VAR;
+const TEST_VAR_NODE_SCOPE = process.env.REACT_APP_TEST_VAR_NODE;
 export default TEST_VAR_NODE_SCOPE;
